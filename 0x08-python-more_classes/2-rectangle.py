@@ -39,7 +39,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-                self.__height = value
+        self.__height = value
 
     def area(self):
         """Return the area of the Rectangle."""
@@ -50,4 +50,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-
